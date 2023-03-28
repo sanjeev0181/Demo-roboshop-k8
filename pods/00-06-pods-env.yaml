@@ -6,7 +6,7 @@ spec:
   containers:
     - name: test-container
       image: registry.k8s.io/busybox
-      command: [ "sh", "-c"]
+      command: [ "bash", "-c"]
       args:
       - while true; do
           echo -en '\n';

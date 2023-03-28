@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configure-map
+data:
+  Name: Aditya
+  company: qwerty

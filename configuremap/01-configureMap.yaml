@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: configure-map
 data:
-  Name: Aditya
+  course: Aditya
   company: qwerty

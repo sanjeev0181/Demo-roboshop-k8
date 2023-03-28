@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-ns
+  name: nginx-po
   labels:
-    name: nginx
+    name: nginx-po
 spec:
   containers:
   - name: nginx
@@ -12,3 +12,4 @@ spec:
       - configMapRef:
             name: configure-map
             key: Name
+    

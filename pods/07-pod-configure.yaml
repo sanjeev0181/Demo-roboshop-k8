@@ -13,3 +13,4 @@ spec:
     envFrom:
       - configMapRef:
             name: configure-map
+            key: Name

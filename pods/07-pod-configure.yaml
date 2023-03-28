@@ -7,9 +7,9 @@ spec:
   - name: nginx
     image: nginx
     env:
-      - name: Name
+      - name: course
         valueFrom:
           configMapKeyRef:
             name: configure-map
-            key: Name
+            key: course
       

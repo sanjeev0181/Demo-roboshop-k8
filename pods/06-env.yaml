@@ -17,3 +17,6 @@ spec:
       value: db.admin.com
     - name: username
       value: sivakumar
+
+
+#kubectl exec -it env -- bash

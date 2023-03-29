@@ -62,3 +62,17 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-pod
+  labels:
+    purpose: debugging
+spec:
+  containers:
+    - name: almalinux
+      image: almalinux
+      command: ["sleep","100000"]

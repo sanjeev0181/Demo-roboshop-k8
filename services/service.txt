@@ -14,3 +14,6 @@ ExternalName: Maps the Service to the contents of the externalName field (e.g. f
 
 
 --service-node-port-range flag (default: 30000-32767). 
+
+loadbalancer working process:
+ELB --> any instance on node port --> cluster ip --> pods

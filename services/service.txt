@@ -1,2 +1,16 @@
 Service is a method for exposing a network application that is running as one or more 
 pods in your cluster.
+
+Service types
+Cluster ip :- internal to k8 cluter 
+              only work pod to pod communication
+
+NodePort: Exposes the Service on each Node's IP at a static port (the NodePort).
+          To make the node port available, Kubernetes sets up a cluster IP address, 
+          the same as if you had requested a Service of type: ClusterIP.
+LoadBalancer: Exposes the Service externally using a cloud provider's load balancer.
+ExternalName: Maps the Service to the contents of the externalName field (e.g. foo.bar.example.com), 
+              by returning a CNAME record with its value. No proxying of any kind is set up.
+
+
+--service-node-port-range flag (default: 30000-32767). 

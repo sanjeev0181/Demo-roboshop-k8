@@ -3,6 +3,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
+labels:
+  service: nginx
 spec:
   containers:
     - name: nginx
@@ -16,6 +18,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
+labels:
+  service: nginx
 spec:
   selector:
     app.kubernetes.io/name: nginx
@@ -23,4 +27,18 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debugs
+labels:
+  purpose: debugs
+spec:
+  containers:
+    - name: ubuntu:20.04
+      image: ubuntu:20.04
+      command: ["sleep","100000"]
 

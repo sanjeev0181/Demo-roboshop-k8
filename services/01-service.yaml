@@ -29,16 +29,15 @@ spec:
       targetPort: 80
 
 ---
-
 apiVersion: v1
 kind: Pod
 metadata:
-  name: debugs
+  name: debug
 labels:
-  purpose: debugs
+  purpose: debug
 spec:
   containers:
-    - name: ubuntu:20.04
-      image: ubuntu:20.04
+    - name: almalinux
+      image: almalinux
       command: ["sleep","100000"]
 

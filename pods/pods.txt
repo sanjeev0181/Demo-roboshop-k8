@@ -1,0 +1,10 @@
+what is pods?
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+
+what is single pods?
+if there is only a single container running in the Kubernetes pod, 
+then it is called a single container pod and it can easily be created with the help of a YAML file
+
+what is multiple pods?
+we can run multiple containers within a single pod. It can be created by specifying the containers in the same YAML file. 
+Here is a sample YAML file used to create a multi container Pod with Tomcat and MongoDB images.
